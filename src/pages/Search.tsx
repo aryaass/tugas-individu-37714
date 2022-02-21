@@ -87,7 +87,7 @@ const Home: React.FC = () => {
           <IonCard class="cardguide">
             <IonCardHeader>
               <IonCardSubtitle class="chefsteps-result">
-                <img className='chefstepsimg' src={'assets/nuget.png'} alt="" />
+                <img className='chefstepsimg' src={'assets/ayam.png'} alt="" />
               </IonCardSubtitle>
               <IonCardTitle class="titlecardguide">Can't-F***-It-Up Fried Chicken</IonCardTitle>
               <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
