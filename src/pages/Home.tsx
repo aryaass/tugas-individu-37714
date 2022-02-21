@@ -33,7 +33,7 @@ const Home: React.FC = () => {
     setShowSplash(true);
     setTimeout(() => {
       setShowSplash(false);
-    }, 2000);
+    }, 3000);
   },[])
   
   return (
