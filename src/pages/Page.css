@@ -53,7 +53,7 @@
 .title{
     width: 90%;
     position: absolute;
-    color: #c9c8c6;
+    color: #ffffff;
     font-size: 130%;
     padding: 0;
     margin-left: 0;
@@ -96,7 +96,7 @@
     width: 80px;
     height: 80px;
     position: absolute;
-    background-color: #fe674c;
+    /* background-color: #fe674c; */
     text-align: center;
     margin: -6px 0 0 20px;
     
