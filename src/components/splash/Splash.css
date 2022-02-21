@@ -11,3 +11,7 @@
     background-position: center;
     background-size: cover;
 }
+.fadeout{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
