@@ -57,7 +57,7 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent scrollY={true}>
+      <IonContent className='bodycolor' scrollY={true}>
         <IonTitle class="picture">
           <IonTitle class="title">
             Get Your Joule. <br></br> Be Happy.
@@ -211,6 +211,7 @@ const Home: React.FC = () => {
           </IonRow>
         </IonGrid>
       </IonContent>
+
         <IonFab vertical="bottom" horizontal="center" slot="fixed" >
           <IonButton color="light" shape="round" type="button" size="small" class="btnBottom">
             <IonText color="primary">Search for Joule</IonText>
@@ -222,6 +223,7 @@ const Home: React.FC = () => {
             <IonIcon icon={qrCodeOutline} />
           </IonFabButton>
         </IonFab>
+
     </IonPage>
   );
 };

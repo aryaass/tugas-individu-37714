@@ -26,172 +26,166 @@ const Home: React.FC = () => {
   const [segment, setSegment] = useState<'all' | 'jouleapp' | 'chefsteps'>('all');
   const [searchText, setSearchText] = useState('');
   const showsegment = () => {
-    if (segment === 'all') {console.log (segment); 
+    if (segment === 'all') {
       return (
-      <IonGrid id='Cooking-Guides'>
-        <IonTitle>
-          <h5 className='textline1'>Visual Doneness Guide</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+      <IonContent className='bodycolor'>
+        <IonGrid style={{backgroundColor:"#edecea"}} id='All'>
+          <h6 className='removetextline'>Visual Doneness Guide</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="guideimg"></IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Get Started: Basic Guides</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="guideimg"></IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Get Started: Basic Guides</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="guideimg"></IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Quick and Easy</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="guideimg"></IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Quick and Easy</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-        <IonTitle>
-          <h5 className='textline1'>Just Time & Stamp</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+          </IonRow>
+          <h6 className='removetextline'>Just Time & Stamp</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="range-time-stamp">
-                <p className='range'>Range</p>
-                <p className='suhu'>149°F <br></br> 185°F</p>
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Chicken Leg</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> 1 HOUR 15 MINUTES - 1 HOUR 45 MINUTES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="range-time-stamp">
+                  <p className='range'>Range</p>
+                  <p className='suhu'>149°F <br></br> 185°F</p>
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Chicken Leg</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> 1 HOUR 15 MINUTES - 1 HOUR 45 MINUTES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="range-time-stamp">
-                <p className='range'>Range</p>
-                <p className='suhu'>149°F <br></br> 176°F</p>
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Chicken Breast</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> 45 MINUTES - 2 HOUR 15 MINUTES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="range-time-stamp">
+                  <p className='range'>Range</p>
+                  <p className='suhu'>149°F <br></br> 176°F</p>
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Chicken Breast</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> 45 MINUTES - 2 HOUR 15 MINUTES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-        <IonTitle>
-          <h5 className='textline1'>CheftSteps.com Results</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+          </IonRow>
+          <h6 className='removetextline'>CheftSteps.com Results</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="chefsteps-result">
-                <img className='chefstepsimg' src={'assets/ayam.png'} alt="" />
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Can't-F***-It-Up Fried Chicken</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="chefsteps-result">
+                  <img className='chefstepsimg' src={'assets/ayam.png'} alt="" />
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Can't-F***-It-Up Fried Chicken</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="chefsteps-result">
-                <img className='chefstepsimg' src={'assets/chicken-wings.jpg'} alt="" />
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Ultimate Korean Fried Chicken</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="chefsteps-result">
+                  <img className='chefstepsimg' src={'assets/chicken-wings.jpg'} alt="" />
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Ultimate Korean Fried Chicken</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-      </IonGrid>
+          </IonRow>
+        </IonGrid>
+      </IonContent>
     )}
-    if (segment === 'jouleapp') {console.log (segment); 
+    if (segment === 'jouleapp') {
       return (
-      <IonGrid id='Cooking-Guides'>
-        <IonTitle>
-          <h5 className='textline1'>Visual Doneness Guide</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+      <IonContent className='bodycolor'>
+        <IonGrid id='JouleApp'>
+          <h6 className='removetextline'>Visual Doneness Guide</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="guideimg"></IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Get Started: Basic Guides</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="guideimg"></IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Get Started: Basic Guides</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="guideimg"></IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Quick and Easy</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="guideimg"></IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Quick and Easy</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> VISUAL DONENESS GUIDES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-        <IonTitle>
-          <h5 className='textline1'>Just Time & Stamp</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+          </IonRow>
+          <h6 className='removetextline'>Just Time & Stamp</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="range-time-stamp">
-                <p className='range'>Range</p>
-                <p className='suhu'>149°F <br></br> 185°F</p>
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Chicken Leg</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> 1 HOUR 15 MINUTES - 1 HOUR 45 MINUTES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="range-time-stamp">
+                  <p className='range'>Range</p>
+                  <p className='suhu'>149°F <br></br> 185°F</p>
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Chicken Leg</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> 1 HOUR 15 MINUTES - 1 HOUR 45 MINUTES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="range-time-stamp">
-                <p className='range'>Range</p>
-                <p className='suhu'>149°F <br></br> 176°F</p>
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Chicken Breast</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> 45 MINUTES - 2 HOUR 15 MINUTES</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="range-time-stamp">
+                  <p className='range'>Range</p>
+                  <p className='suhu'>149°F <br></br> 176°F</p>
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Chicken Breast</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> 45 MINUTES - 2 HOUR 15 MINUTES</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-      </IonGrid>
+          </IonRow>
+        </IonGrid>
+      </IonContent>
     )}
-    if (segment === 'chefsteps') {console.log (segment); 
+    if (segment === 'chefsteps') {
       return (
-      <IonGrid id='Cooking-Guides'>
-        <IonTitle>
-          <h5 className='textline1'>CheftSteps.com Results</h5>
-        </IonTitle>
-        <IonRow class="ion-justify-content-center">
+      <IonContent className='bodycolor'>
+        <IonGrid id='ChefSteps'>
+          <h6 className='removetextline'>CheftSteps.com Results</h6>
+          <IonRow class="ion-justify-content-center">
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="chefsteps-result">
-                <img className='chefstepsimg' src={'assets/ayam.png'} alt="" />
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Can't-F***-It-Up Fried Chicken</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="chefsteps-result">
+                  <img className='chefstepsimg' src={'assets/ayam.png'} alt="" />
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Can't-F***-It-Up Fried Chicken</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-          <IonCard class="cardguide">
-            <IonCardHeader>
-              <IonCardSubtitle class="chefsteps-result">
-                <img className='chefstepsimg' src={'assets/chicken-wings.jpg'} alt="" />
-              </IonCardSubtitle>
-              <IonCardTitle class="titlecardguide">Ultimate Korean Fried Chicken</IonCardTitle>
-              <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
-            </IonCardHeader>
-          </IonCard>
+            <IonCard class="cardguide">
+              <IonCardHeader>
+                <IonCardSubtitle class="chefsteps-result">
+                  <img className='chefstepsimg' src={'assets/chicken-wings.jpg'} alt="" />
+                </IonCardSubtitle>
+                <IonCardTitle class="titlecardguide">Ultimate Korean Fried Chicken</IonCardTitle>
+                <IonCardTitle class="subtitlecardguide"> CHEFSTEPS.COM</IonCardTitle>
+              </IonCardHeader>
+            </IonCard>
 
-        </IonRow>
-      </IonGrid>
+          </IonRow>
+        </IonGrid>
+      </IonContent>
     )}
   }
   const inputChangeHandler = (event:CustomEvent) => {
@@ -206,7 +200,7 @@ const Home: React.FC = () => {
             <IonMenuButton />
           </IonButtons> */}
           {/* <IonTitle>{name}</IonTitle> */}
-          <IonSearchbar value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
+          <IonSearchbar class="searchbar" value={searchText} onIonChange={e => setSearchText(e.detail.value!)}></IonSearchbar>
           <IonButtons class="cancel" slot="primary">
             <Link to={'/Home'}>Cancel</Link>
           </IonButtons>
@@ -225,11 +219,7 @@ const Home: React.FC = () => {
           </IonSegment>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        {showsegment()}
-      </IonContent>
-      
-
+      {showsegment()}
     </IonPage>
   );
 };
