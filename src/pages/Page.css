@@ -1,0 +1,217 @@
+/*Gambar di Sidebar*/
+.image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url(/resources/sidebar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Gambar di Home*/
+.picture{
+    width: 100%;
+    height: 30%;
+    background-image: url(/resources/splash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+/*Gambar di Tips*/
+.picturetips{
+    width: fill;
+    height: 30vw;
+    position: absolute;
+    left: 0;
+    background-image: url(/resources/splash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cancel a{
+    color: #212529;
+    text-decoration: none;
+}
+
+.iconsearch{
+    vertical-align: middle;
+}
+
+.iconlayer{
+    color: #c9c8c6;
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.title{
+    width: 90%;
+    position: absolute;
+    color: #c9c8c6;
+    font-size: 130%;
+    padding: 0;
+    margin-left: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+/*Card Guide*/
+.titlecardguide{
+    font-size: 15px;
+    margin-left: 150px;
+}
+.subtitlecardguide{
+    font-size: 10px;
+    margin-left: 150px;
+    color: #c9c8c6;
+}
+/*Card Just Time & Stamp*/
+.range-time-stamp{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #fe674c;
+    border-radius: 100%;
+    text-align: center;
+    margin: -6px 0 0 20px;
+}
+.range{
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+.suhu{
+    font-size: 16px;
+    margin-top: -12px;
+    color: #ffffff;
+}
+
+/*Card Just Time & Stamp*/
+.chefsteps-result{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #fe674c;
+    text-align: center;
+    margin: -6px 0 0 20px;
+    
+}
+
+.chefstepsimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+ion-card{
+    margin-inline: 0px;
+}
+
+/*Card Guide Makanan*/
+.guideimg{
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(/resources/burger.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 10% 10% 0 / 0 85% 85% 0;
+}
+
+.guideimg1{
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(/resources/sop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 10% 10% 0 / 0 85% 85% 0;
+}
+
+.cardguide{
+    height: 100px;
+    width: 100%;
+}
+
+/*Card Type Makanan*/
+.cardtype{
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.typeimg{
+    width: 50px;
+    height: 50px;
+}
+
+.h3title {
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    margin-top: 90px;
+}
+
+.bgcircle{
+    width: 70px;
+    height: 70px;
+    background-color: #f9dad1;
+    display: block;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: -25px;
+}
+
+ion-label{
+    text-transform: none;
+}
+
+.textline1{
+    font-size: 70%;
+    color: #c9c8c6;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0% 0 0%;
+}
+
+.textline1::before, 
+.textline2::before, 
+.textline1::after, 
+.textline2::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #e4e4e1;
+    margin: auto 3px auto 3px;
+}
+
+.btnBottom {
+    border-radius: 100%;
+    color: #fe674c;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+ion-button.btnBottom {
+    height: 50px;
+    margin-left: unset;
+    margin-inline-start: -50px;
+}
