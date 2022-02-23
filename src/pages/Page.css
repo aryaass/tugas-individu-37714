@@ -59,7 +59,7 @@
     position: absolute;
 }
 
-.title{
+.home-title1{
     width: 90%;
     position: absolute;
     color: #ffffff;
@@ -69,6 +69,22 @@
     bottom: 0;
     margin-bottom: 20px;
 }
+
+.home-title2{
+    position: absolute;
+    color: #ffffff;
+    font-size: 80%;
+    right: 12px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.line {      
+    padding: 0 5px 2px 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
 /*Card Guide*/
 .titlecardguide{
     font-size: 15px;

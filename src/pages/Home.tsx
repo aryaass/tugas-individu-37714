@@ -59,9 +59,8 @@ const Home: React.FC = () => {
 
       <IonContent className='bodycolor' scrollY={true}>
         <IonTitle class="picture">
-          <IonTitle class="title">
-            Get Your Joule. <br></br> Be Happy.
-          </IonTitle>
+          <IonTitle class="home-title1">Get Your Joule. <br></br> Be Happy.</IonTitle>
+          <IonTitle class="home-title2 line">Explore</IonTitle>
         </IonTitle>
         
         <IonTitle>
